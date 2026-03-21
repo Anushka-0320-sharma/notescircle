@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+/* NAVBAR */
+.custom-nav {
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.logo-section img {
+  width: 100px;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+.logo-section span {
+  font-size: 32px;
+  color: #022764;
+  font-family: "Lato", sans-serif;
+  padding: 10px;
+  font-weight: bold;
+}
+/* BUTTONS */
+.btn-login {
+  background-image: linear-gradient(
+    to bottom,
+    #06367d,
+    #004e8e,
+    #006499,
+    #0079a0,
+    #078ea4
+  );
+  color: white;
+  border-radius: 20px;
+  padding: 10px 25px;
+  margin: 10px;
+  border: 1px solid blue;
+  font-weight: bold;
+}
+.btn-login:hover {
+  background-image: linear-gradient(
+    to bottom,
+    #584af3,
+    #0076ff,
+    #0096ff,
+    #00b1ff,
+    #0fc8f9
+  );
+  border: 1px solid skyblue;
+}
+.btn-register {
+  background-image: linear-gradient(
+    to bottom,
+    #046669,
+    #00776c,
+    #008763,
+    #00964c,
+    #06a325
+  );
+  color: white;
+  border-radius: 20px;
+  padding: 10px 25px;
+  margin: 10px;
+  border: 1px solid green;
+  font-weight: bold;
+}
+.btn-register:hover {
+  background-image: linear-gradient(
+    to bottom,
+    #0be087,
+    #0cde72,
+    #1cdb5a,
+    #2dd83d,
+    #3dd509
+  );
+  border: 1px solid lightgreen;
+}
+.btn-main {
+  background-image: linear-gradient(
+    -225deg,
+    #65379b 0%,
+    #886aea 53%,
+    #6457c6 100%
+  );
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: 1px solid rgb(33, 42, 96);
+}
+/* HERO */
+.hero {
+  padding: 100px 20px;
+  color: white;
+  background:
+    linear-gradient(rgba(57, 55, 55, 0.5), rgba(72, 70, 70, 0.5)),
+    url("../uploads/hero-bg.jpeg");
+  background-size: cover;
+}
+/* ABOUT */
+.about {
+  padding: 60px 20px;
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+}
+.about-title {
+  font-size: 35px;
+  color: #b9049e;
+  font-family: "Lato", sans-serif;
+  padding: 10px;
+  font-weight: bold;
+}
+/* ⭐ FINAL IMAGE SIZE */
+.about-img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: block;
+  border-radius: 25px;
+}
+/* WHY */
+.why {
+  padding: 60px 20px;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+ul {
+  font-size: 20px;
+}
+.why-heading {
+  font-size: 38px;
+  color: #0805bb;
+  font-family: "Lato", sans-serif;
+  padding: 10px;
+  font-weight: bold;
+}
+/* FAQ */
+.faq {
+  padding: 60px 20px;
+  background-image: linear-gradient(
+    -225deg,
+    #69eacb 0%,
+    #eaccf8 48%,
+    #6654f1 100%
+  );
+}
+.faq-title {
+  font-size: 35px;
+  color: #5e04b9;
+  font-family: "Lato", sans-serif;
+  padding: 10px;
+  font-weight: bold;
+}
+.faq-item {
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.faq-question {
+  width: 100%;
+  background: whitesmoke;
+  border: none;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+.faq-question:hover {
+  background: gainsboro;
+}
+.icon {
+  font-size: 20px;
+  transition: 0.3s;
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  background: ghostwhite;
+  padding: 0 15px;
+  transition: all 0.4s ease;
+}
+/* active */
+.faq-item.active .faq-answer {
+  max-height: 120px;
+  padding: 15px;
+}
+.faq-item.active .icon {
+  transform: rotate(45deg);
+}
+/* FOOTER */
+.footer {
+  background: black;
+  color: white;
+  padding: 15px;
+}
+/* MOBILE */
+@media (max-width: 768px) {
+  .about-img {
+    max-width: 300px;
+    margin-top: 20px;
+  }
+  .hero {
+    padding: 70px 20px;
+  }
+}
